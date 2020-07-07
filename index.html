@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="style.css">
+  <link href="carousel.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light " style="padding-bottom: 20px;">
+    <div class="container">
+      <a class="navbar-brand" href="#">WageExchange</a>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-info  my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+    </div>
+  </nav>
+  <section class="section-style">
+    <div class="jumbotron"
+      style="border-radius:0px;background-image:
+      url(https://previews.123rf.com/images/nicoelnino/nicoelnino1710/nicoelnino171000017/88776118-foreign-exchange-trading-concept-with-currency-symbols-inside-connected-gears-to-show-connection-bet.jpg); background-size: cover;">
+
+      <div class=" container" style="background-color: rgba(255, 255, 255, 0.671); border-radius: 30px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+        <h1 class="display-4" style="font-weight:bolder">Wage Converter</h1>
+        <p class="lead">The currency converter of Wage Exchange helps you calculating the daily exchange rate of
+          four familiar counties's currency in Vietnam. Use the currency converter to know the current retail exchange rate for banknotes
+          (most
+          of the currency converters on the Internet show wholesaling rates for currencies, not banknotes). Get the
+          best
+          exchange rates! Great advantages. No commission.</p>
+        <hr class="my-8">
+        <p class="text-info" style="font-size:25px; font-weight: bolder; text-decoration: underline;">How much money you want to exchange?</p>
+        <!-- insert system -->
+
+        <!-- <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p> -->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              Amount
+              <input style="border-radius: 30px; border:1px solid rgb(131, 130, 130);padding: 10px;" type="number" id="amount" />
+            </div>
+            <div class="col-3">
+
+              <label >From</label>
+              <form>
+                <select style="border-radius: 30px; border:1px solid rgb(131, 130, 130); padding: 10px;" name="unit" id="fromCurrencyList">
+                  <option value="vnd">VND</option>
+                  <option value="usd">USD</option>
+                  <option value="krw">KRW</option>
+                  <option value="eur">EUR</option>
+                </select>
+                
+              </form>
+            </div>
+            <div class="col-3">
+              <label>To</label>
+              <form id="toCurrencyList">
+
+                <input type="radio" name="unit" value="vnd"> VND<br>
+                <input type="radio" name="unit" value="usd"> USD<br>
+                <input type="radio" name="unit" value="krw"> KRW<br>
+                <input type="radio" name="unit" value="eur"> EURO
+              </form>
+            </div>
+            <div class="col-3">
+              <button type="button" id="convertButton" class="btn btn-info">Convert</button>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="container" style="background-color: rgba(255, 255, 255, 0.822); width:100%; height:50px; border-radius: 30px; margin-top:30px; display: flex; justify-content: center; align-items: center; font-size: 20px;">
+      <span id="result"> You will receive</span>
+      </div>
+
+
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
