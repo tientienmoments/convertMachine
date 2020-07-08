@@ -45,19 +45,20 @@ function changeMoney() {
         alert("Please select Destination Currency!!");
     } else {
         let convertedAmount = result * getConversionRate(fromCurrency.value, toCurrencyEl.value)
-        let wageExchange= formatCurrency(toCurrencyEl.value,convertedAmount)
-        document.getElementById("result").innerHTML = `the money in exchange is ${wageExchange.toFixed(2)}`    
+       let abc = convertedAmount.toFixed(2)
+        let wageExchange = formatCurrency(toCurrencyEl.value,abc)
+
+        document.getElementById("result").innerHTML = `the money in exchange is ${wageExchange}`    
     }
 }
 
-  function formatCurrency(type, value) {
+ function formatCurrency(type, value) {
   const formatter = new Intl.NumberFormat(type, {
     currency: type,
     style: "currency"
   });
   return formatter.format(value);
 } 
-
 
 
 
